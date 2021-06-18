@@ -2,12 +2,14 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [Information](#information)
 
-## Instructions
+## Information
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+This is a simple Frontend one page website, it has a dynamic navigation menu.
 
-To get started, open `js/app.js` and start building out the app's functionality
+Bootstrap is used to implement hamburger menu on mobile screen resolution.
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+The first section includes a bootstrap collapsable paragraph.
+
+
