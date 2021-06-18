@@ -30,6 +30,8 @@ const navBar = document.querySelector('header');
 */
 
 
+/* This function returns all visible sections and save it to an object with key $ value
+The key is the section ID and the value is the section text */
 function getAllSections() {
 
     let allSections = document.querySelectorAll('section');
@@ -101,9 +103,8 @@ function buildNav() {
  * 
 */
 
-// Build menu 
 
-// Scroll to section on link click
+// Build Navigation Menu when DOM is loaded
 
 document.addEventListener("DOMContentLoaded", function(event) { 
 
@@ -111,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 });
   
+// Scroll event 
 
 window.addEventListener('scroll', (event) => {
 
@@ -145,6 +147,8 @@ window.addEventListener('scroll', (event) => {
 
 
 });
+
+// Back to the top of the page when the button is clicked
 
 backToTopBtn.addEventListener('click', scrollToTop);
 
