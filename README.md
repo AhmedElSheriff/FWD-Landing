@@ -3,7 +3,7 @@
 ## Table of Contents
 
 * [Information](#information)
-* [Languages Used](#Languages Used)
+* [Languages Used](#Languages_Used)
 * [Project Purpose](#Project Purpose)
 * [Hint](#Hint)
 
@@ -11,7 +11,7 @@
 
 This is a simple Frontend one page website, it has a dynamic navigation menu.
 
-## Languages Used
+## Languages_Used
 
 - HTMl
 - CSS
