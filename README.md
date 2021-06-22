@@ -4,7 +4,7 @@
 
 * [Information](#information)
 * [Languages Used](#Languages_Used)
-* [Project Purpose](#Project Purpose)
+* [Project Purpose](#Project_Purpose)
 * [Hint](#Hint)
 
 ## Information
@@ -17,7 +17,7 @@ This is a simple Frontend one page website, it has a dynamic navigation menu.
 - CSS
 - Javascript
 
-## Project Purpose
+## Project_Purpose
 
 The purpose of this project is to implement and build a dynamic navigation menu based on the number of sections visible in a landing page.
 The navigation menu includes anchor tags which redirect to the sections when clicked by using only javascript.
