@@ -81,6 +81,11 @@ section {
     font-weight: bold;
 }
 
+a:hover{
+    cursor: pointer;
+    color: #558482 !important;
+}
+
 .navbar__menu .menu__link {
     display: block;
     padding: 1em;

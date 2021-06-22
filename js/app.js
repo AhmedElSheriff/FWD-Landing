@@ -87,8 +87,8 @@ function buildNav() {
         listElement.classList.add('nav-item');
         anchorElement.classList.add('nav-link');
         anchorElement.textContent = sectionObj[key];
-        anchorElement.href = "#" + key;
-
+        //anchorElement.href = "#" + key;
+        anchorElement.dataset.secid = key;
         listElement.appendChild(anchorElement);
         navMenu.appendChild(listElement);
 
@@ -125,7 +125,7 @@ window.addEventListener('scroll', (event) => {
     sections.forEach(section => {
 
         let sectionId = section.id;
-        let navItem = document.querySelector("[href='#" + section.id + "']");
+        let navItem = document.querySelector("[data-secId='" + section.id + "']");
         
         if(scrollTop > section.offsetTop - 250 && scrollTop < section.offsetTop + section.offsetHeight - 250) {
             navItem.classList.add('active');
@@ -152,3 +152,23 @@ window.addEventListener('scroll', (event) => {
 
 backToTopBtn.addEventListener('click', scrollToTop);
 
+// Use scrollIntoView() to navigate to sections
+
+document.addEventListener("DOMContentLoaded", (event) => { 
+
+    for(let item of navItems) {
+
+        item.addEventListener('click', function(event) {
+
+            let sectionId = event.target.dataset.secid;
+            
+            const section = document.getElementById(sectionId);
+
+            if(section) {
+
+                section.scrollIntoView();
+            }
+        });
+    }
+
+});
