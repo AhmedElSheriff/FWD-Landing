@@ -30,7 +30,7 @@ const navBar = document.querySelector('header');
 */
 
 
-/* This function returns all visible sections and save it to an object with key $ value
+/* This function returns all visible sections and save it to an object with key & value
 The key is the section ID and the value is the section text */
 function getAllSections() {
 

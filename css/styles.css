@@ -67,11 +67,18 @@ section {
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
-    text-align: right;
+    text-align: left;
 }
 
 .navbar__menu li {
     display: inline-block;
+    padding-right: 10px;
+}
+
+.navbar__menu li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .navbar__menu .menu__link {
@@ -90,11 +97,14 @@ section {
 
 /* Header Styles */
 .page__header {
-    background: #fff;
+    background: #fd982e;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 /* Footer Styles */
@@ -241,16 +251,9 @@ section.your-active-class .landing__container::after {
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
+    padding-top: 10px;
   }
-  #back-to-top-btn::after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-  }
+
   #back-to-top-btn:hover {
     cursor: pointer;
     background-color: #333;
