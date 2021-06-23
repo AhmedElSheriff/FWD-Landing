@@ -166,7 +166,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
             if(section) {
 
-                section.scrollIntoView();
+                section.scrollIntoView({
+                    behavior: 'smooth',
+                });
             }
         });
     }
